@@ -5,6 +5,7 @@
 <?php wp_title(); ?>
 </title>
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen,projection" />
 <?php wp_head(); ?>
 </head>
@@ -24,11 +25,11 @@
                 <div class="in pull-right"><a href="#" title="Linked In" target="_blank"></a></div>
                 <div class="twitter pull-right"><a href="#" title="Twitter" target="_blank"></a></div>
             </div>
-            <div class="phone col-xs-12 hidden-xs"><i class="fa fa-phone"></i> 123-456-7890</div>
+            <div class="phone col-xs-12 hidden-xs"><i class="fa fa-phone"></i> 417-501-6989</div>
         </div>
         </div>
         <div class="visible-xs col-xs-12 flush">
-                <h2 class="phone-m col-xs-12 text-center"><i class="fa fa-phone"></i> 123-456-7890</h2>
+                <a href="tel:123-456-7890"><h2 class="phone-m col-xs-12 text-center"><i class="fa fa-phone"></i> 417-501-6989</h2></a>
             </div>
     
 </div> 

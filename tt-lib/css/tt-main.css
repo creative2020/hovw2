@@ -23,6 +23,10 @@ gray
 
 /*Main*/
 
+html {
+    margin:0;
+}
+
 h1,h2,h3,h4,h5,h6,h7 {
     color:#0c0d11;
 }
@@ -36,6 +40,7 @@ h3 {
     font-size:1.6em;
 }
 body {
+    margin:0;
 	color: #0c0d11;
 	text-align: left;
 	font-size: 1.4em;
@@ -755,6 +760,11 @@ ul.product-categories > li.cat-item:hover{
 @media only screen 
 and (max-width : 768px) {
 
+/* Turns off WP admin bar */
+#wpadminbar { 
+    display:none; 
+}
+    
     
 /*Top*/
 
