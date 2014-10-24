@@ -38,7 +38,7 @@ get_header( 'shop' ); ?>
       
 <div id="page" class="row">
     
-<div id="page-content" class="col-sm-8">
+<div id="page-content" class="col-xs-12 col-sm-12 col-md-8">
     <?php do_action( 'woocommerce_archive_description' ); ?>
 
 		<?php if ( have_posts() ) : ?>
@@ -78,7 +78,7 @@ get_header( 'shop' ); ?>
 				do_action( 'woocommerce_after_shop_loop' );
 			?>
     
-    <div id="sidebar" class="col-sm-4 flush">
+    <div id="sidebar" class="col-xs-12 col-sm-12 col-md-4 flush">
         <div id="social-media-icons">
             <a href="#"><i class="fa fa-facebook-square"></i></a>
             <a href="#"><i class="fa fa-twitter-square"></i></a>

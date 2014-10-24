@@ -47,14 +47,14 @@ Template Name: Home
                     
                     <i class="now fa fa-bullhorn"></i><i class="go fa fa-external-link"></i>
                     <h2>Recent News</h2>
-                    <?php echo do_shortcode('[tt_posts limit="3" cat_name="home"]'); ?>
+                    <?php echo do_shortcode('[tt_posts limit="2" cat_name="home"]'); ?>
                 </div>
             </a>
             <a href="#">
                 <div class="quicklink col-sm-4">
                     <i class="now fa fa-shopping-cart"></i><i class="go fa fa-external-link"></i>
                     <h2>For Sale</h2>
-                    <?php echo do_shortcode('[tt_posts limit="3" cat_name="home"]'); ?>
+                    <?php echo do_shortcode('[tt_posts type="product" limit="2"]'); ?>
                 
                 </div>
             </a>
@@ -62,7 +62,7 @@ Template Name: Home
                 <div class="quicklink col-sm-4">
                     <i class="now fa fa-rocket "></i><i class="go fa fa-external-link"></i>
                     <h2>Performance</h2>
-                    <?php echo do_shortcode('[tt_posts limit="3" cat_name="home"]'); ?>
+                    <?php echo do_shortcode('[tt_posts limit="2" cat_name="performance"]'); ?>
                 
                 </div>
             </a>

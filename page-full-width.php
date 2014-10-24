@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Page
+Template Name: Page full width
 */
 ?>
 <?php get_header(); ?>
@@ -20,21 +20,14 @@ Template Name: Page
     </div>
     
     
-<div id="page-content" class="col-sm-8">
+<div id="page-content" class="col-sm-12">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
       <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
     <?php endwhile; endif; ?>
   </div>
       
-  <div id="sidebar" class="col-xs-12 col-sm-4 flush">
-        <div id="social-media-icons">
-            <a href="#"><i class="fa fa-facebook-square"></i></a>
-            <a href="#"><i class="fa fa-twitter-square"></i></a>
-        </div>
-      
-      <?php dynamic_sidebar( 'tt-sidebar' ); ?>
-  </div>
+  
   </div>
   
         

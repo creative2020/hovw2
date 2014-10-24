@@ -28,6 +28,9 @@ add_filter('widget_text', 'do_shortcode');
 // Enable post thumbnails
 add_theme_support( 'post-thumbnails' );
 
+// Enable woo commerce theme support
+add_theme_support( 'woocommerce' );
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// Add boostrap from CDN
 
 if( !function_exists("tt_bootstrap_cdn") ) {  
@@ -135,3 +138,18 @@ add_action('admin_print_footer_scripts', 'tt_print_acf');
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////// 
 
+add_action('woocommerce_before_shop_loop_item', 'tt_before_single_product');
+
+function tt_before_single_product() {
+    //echo    '<div class="col-sm-4 col-xs-12">';
+}
+
+////////////////////////////////////////////////////////
+
+add_action('woocommerce_after_shop_loop_item', 'tt_after_single_product');
+
+function tt_after_single_product() {
+    //echo    '</div>';
+}
+
+////////////////////////////////////////////////////////
