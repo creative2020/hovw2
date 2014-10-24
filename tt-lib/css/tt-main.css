@@ -81,7 +81,7 @@ a:hover {
     background-color:#000;
     border-top-left-radius:1.0em;
     border-top-right-radius:1.0em;
-    border-bottom:4px solid red;
+    border-bottom:4px solid #e11b22;
 }
 #top .phone {
 	font-size: 1.5em;
@@ -113,16 +113,14 @@ a:hover {
 
 
 /*Navigation*/
+
 #navbar {
     background-color:#3b3b3c;
     color:white;
 }
-
 .navbar,
 .nav-container {
-    border-bottom:0px solid white;
-    height:50px;
-    overflow:hidden;
+    
 }
 .menu-social-media-container {
     height:50px;
@@ -130,7 +128,30 @@ a:hover {
     margin:0px;
     padding:0px;
 }
+.navbar-header {
+    background-color:black;
+}
+
+
+/*
+<div class="navbar-header visible-xs">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+*/
+
+
+
+
+
 .navbar,
+.navbar-brand,
+.navbar-brand:hover,
 .navbar-default .navbar-brand {
     color:white;
 }
@@ -142,10 +163,9 @@ a:hover {
     width: 22px;
     height: 2px;
     border-radius: 1px;
+    background-color:white;
 }
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: #767676;
-}
+
 .navbar-toggle {
     position: relative;
     float: right;
@@ -153,9 +173,8 @@ a:hover {
     margin-top: 8px;
     margin-right: 15px;
     margin-bottom: 8px;
-    background-color: transparent;
-    background-image: none;
-    border: 1px solid #e11b22;
+    background-color:#3b3b3c;
+    border: 1px solid white;
     border-radius: 4px;
 }
 .nav > li > a {
@@ -167,13 +186,25 @@ a:hover {
     color:white;
     background-color:#e11b22;
 }
-
+/*Shop Menu*/
+.shop {
+    border-right:0px;
+    background-color:#6a6868;
+}
+li.shop > a{
+    border-right:0px;
+}
 .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
     background-color: #e11b22;
     border-color: transparent;
 }
+.current-menu-parent,
+.shop .current-menu-ancestor .current-menu-parent a,
+.current-menu-item{
+    background-color:#e11b22;
+}
 .dropdown-menu li a {
-    color:#e11b22;
+    color:white;
     text-decoration:none;
 }
 .dropdown-menu {
@@ -203,12 +234,60 @@ a:hover {
     text-decoration: none;
     background-color: #3b3b3c;
 }
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:-6px;
+    margin-left:-1px;
+    -webkit-border-radius:0 6px 6px 6px;
+    -moz-border-radius:0 6px 6px 6px;
+    border-radius:0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+    display:block;
+}
+.dropdown-submenu>a:after {
+    display:block;
+    content:" ";
+    float:right;
+    width:0;
+    height:0;
+    border-color:transparent;
+    border-style:solid;
+    border-width:5px 0 5px 5px;
+    border-left-color:#cccccc;
+    margin-top:5px;
+    margin-right:-10px;
+}
+.dropdown-submenu:hover>a:after {
+    border-left-color:#ffffff;
+}
+.dropdown-submenu.pull-left {
+    float:none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left:-100%;
+    margin-left:10px;
+    -webkit-border-radius:6px 0 6px 6px;
+    -moz-border-radius:6px 0 6px 6px;
+    border-radius:6px 0 6px 6px;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #3b3b3c;
+    outline: 0;
+}
 /*Callout*/
 h3.callout-message {
     font-size:1.5em;
     color:white;
     text-align:center;
-    padding:0.3em 0 0.7em 0;
+    padding:0.5em 0 0.7em 0;
+    margin:0;
 }
 /*Page Header*/
 #page-header {
@@ -303,6 +382,7 @@ h3.callout-message {
     list-style-type:none;
 }
 h2.widgettitle {
+    text-align:center;
     padding:0.5em 0 0 0.5em;
 }
 #social-media-icons {
@@ -325,6 +405,35 @@ a.side-icon {
     padding:1.0em 1.0em;
     text-decoration:none;
 }
+ul#menu-performance,
+.menu-performance-container {
+    padding:0;
+    margin:0;
+    font-weight:300;
+    font-style:normal;
+}
+ul#menu-performance li {
+    text-align:center;
+    background-color:#767676;
+    margin:1px 0;
+    padding:0.5em 0;
+}
+ul#menu-performance li:hover {
+    background-color:#e11b22;
+}
+ul#menu-performance li a{
+    font-size:1.1em;
+    font-weight:300;
+    font-style:normal;
+    color:white;
+    padding:0.7em;
+}
+
+
+
+
+
+
 /*Section Header*/
 #section-header {
     background-color:#ccc;
@@ -515,8 +624,81 @@ select.orderby {
 p.woocommerce-result-count {
     float:left;
 }
+ul.product-categories {
+    margin:0;
+    padding:0;
+}
+ul.product-categories li.cat-item {
+    background-color:#767676;
+    margin:0;
+    padding:0.7em 0;
+    border-bottom:1px solid #ccc;
+}
+ul.product-categories li.cat-item:hover {
+    background-color:#e11b22;
+    border-bottom:1px solid #ccc;
+}
+ul.product-categories li.cat-item a{
+    color:#ccc;
+    margin:0;
+    padding:1.0em;
+}
+ul.product-categories a:hover{
+    background-color:transparent;
+    color:white;
+}
+ul.product-categories ul.children {
+    background-color:#3b3b3c;
+    margin:0;
+    padding:0;
+    border-bottom:1px solid #ccc;
+}
+ul.product-categories ul.children a {
+    margin:0 0 0 1.0em;
+}
+ul.product-categories ul.children li.cat-item > ul.children li.cat-item a{
+    color:white;
+    margin:0 0 0 2.5em;
+}
 
+ul.product-categories ul.children li.cat-item a{
+    background-color:transparent;
+    content:">";
+}
+ul.product-categories ul.children li.cat-item:hover{
+    background-color:#767676;
+}
+ul.product-categories ul.children li.cat-item:first-child{
+    margin-top:0.5em;
+}
+ul.product-categories ul.children li.cat-item{
+    background-color:#3b3b3c;
+    padding:0.5em 0;
+}
+ul.product-categories ul.children a:before{
+    content:"> ";
+}
+ul.product-categories li.current-cat,
+ul.product-categories li.cat {
+    background-color:#e11b22;
+    padding-bottom:1.5em;
+}
 
+ul.product-categories ul.children li.current-cat {
+    background-color:#e11b22;
+}
+ul.product-categories li.current-cat-parent {
+    background-color:#a01318;
+}
+ul.product-categories ul.children li.current-cat a {
+    color:white;
+}
+ul.product-categories ul.children li.cat-item > ul.children li.cat-item:hover,
+ul.product-categories ul.children > li.cat-item:hover,
+ul.product-categories > li.cat-item:hover{
+    background-color:#e11b22;
+    
+}
 
 /*Footer*/
 #footer-wrap {
@@ -563,13 +745,58 @@ p.woocommerce-result-count {
     color:#9fcf67;
 }
 
-
+#wpadminbar {
+    display:none;
+}
 
 
 /* mobile ------------------------START------------------- */
 
 @media only screen 
 and (max-width : 768px) {
+
+    
+/*Top*/
+
+#top {
+    margin-top:0 auto;
+    padding:1.5em 0;
+    background:url('../../images/header-img.png') no-repeat center 100px;
+    background-size:120%;
+    background-color:#000;
+    border-top-left-radius:0em;
+    border-top-right-radius:0em;
+    border-bottom:4px solid #e11b22;
+}
+h2.phone-m{
+    color:white;
+	font-size: 1.5em;
+	font-weight: 400;
+    text-align: center;
+    background-color:#e11b22;
+    padding:1.0em;
+    margin:0;
+}
+
+#top .logo {
+    width:80%;
+    margin: 0 auto;
+    float:none;
+}
+
+#top .logo a {
+    text-align:center;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+#callout {
+    color:white;
+    text-align:center;
+}    
+
+    
+.mobile-main-nav {display: block;}
     
 #social .pull-right {
 }

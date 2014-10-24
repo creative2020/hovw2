@@ -89,6 +89,7 @@ add_filter('admin_footer_text', 'tt_custom_admin_footer');
 
 register_nav_menus( array(
 	'tt_main' => 'TT Main',
+    'tt_main' => 'TT Mobile',
 	
 ) );
 

@@ -25,29 +25,43 @@
                 <div class="twitter pull-right"><a href="#" title="Twitter" target="_blank"></a></div>
             </div>
             <div class="phone col-xs-12 hidden-xs"><i class="fa fa-phone"></i> 123-456-7890</div>
-            <h2 class="phone-m col-xs-12 visible-xs-block text-center"><i class="fa fa-phone"></i> 123-456-7890</h2>
         </div>
-    </div>
-</div>         
+        </div>
+        <div class="visible-xs col-xs-12 flush">
+                <h2 class="phone-m col-xs-12 text-center"><i class="fa fa-phone"></i> 123-456-7890</h2>
+            </div>
     
+</div> 
+    
+    
+<!--Mobile menu    -->
+    
+<div class="navbar-header visible-xs">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Menu</a>
+    </div>
+<!--Mobile menu    -->    
+
 <div class="row">
     <div id="navbar" class="col-sm-10 col-sm-offset-1">
-        
-                        
                        
-						<?php wp_nav_menu( array(
+        <?php wp_nav_menu( array(
                 'menu'              => 'short',
                 'theme_location'    => 'tt-main',
-                'depth'             => 2,
+                'depth'             => 3,
                 'container'         => 'div',
                 'container_class'   => 'collapse navbar-collapse',
-        'container_id'      => 'bs-example-navbar-collapse-1',
+                'container_id'      => 'tt-main-navbar-collapse-1',
                 'menu_class'        => 'nav navbar-nav',
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                 'walker'            => new wp_bootstrap_navwalker())
-            ); ?>
+        ); ?>
             
-                        
     </div>
 </div>
     
