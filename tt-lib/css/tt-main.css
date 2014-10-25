@@ -81,7 +81,7 @@ a:hover {
 #top {
     margin-top:1.0em;
     padding:1.5em 2.5em 0.5em 2.5em;
-    background:url('../../images/header-img.png') no-repeat top right;
+    background:url('../../images/header-img.png') no-repeat 120% -55px;
     background-size:80%;
     background-color:#000;
     border-top-left-radius:1.0em;
@@ -89,6 +89,8 @@ a:hover {
     border-bottom:4px solid #e11b22;
 }
 #top .phone {
+    color:white;
+    margin:63px 0 0 0;
 	font-size: 1.5em;
 	font-weight: 400;
     text-align: right;
@@ -771,8 +773,8 @@ and (max-width : 768px) {
 #top {
     margin-top:0 auto;
     padding:1.5em 0;
-    background:url('../../images/header-img.png') no-repeat center 100px;
-    background-size:120%;
+    background:url('../../images/header-img.png') no-repeat center 75px;
+    background-size:100%;
     background-color:#000;
     border-top-left-radius:0em;
     border-top-right-radius:0em;

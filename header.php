@@ -14,11 +14,11 @@
 
 <div class="row">
     <div id="top" class="col-xs-12 col-sm-10 col-sm-offset-1">
-        <div class="logo col-xs-12 col-sm-6">
+        <div class="logo col-xs-12 col-sm-4">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo.png" class="" width="100%">
             <a href="<?php echo get_option('home'); ?>" title="<?php bloginfo('name'); ?>"></a>
         </div>
-        <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12 col-sm-8">
             <div id="social" class="col-xs-12 col-sm-12 hidden-xs">
                 <div class="google pull-right"><a href="#" title="google +" target="_blank"></a></div>
                 <div class="facebook pull-right"><a href="#" title="Facebook" target="_blank"></a></div>
