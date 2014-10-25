@@ -58,13 +58,15 @@ function tt_btn($atts, $content = null) {
 add_shortcode( 'tt_rule', 'tt_rule' );
 function tt_rule($atts, $content = null) {
     extract(shortcode_atts(array(
-        'size'   => '1px',
-        'color'  => '#333',
+        'size'   => '8px',
+        'color'  => '#ccc',
+        'padding'  => '0',
+        'margin'  => '1.0em 0',
     ), $atts ) );
 
     $classes = 'rule';
 
-    return '<div class="' . $classes . '" style"border:' . $size . ' solid ' . $color .';"></div>';
+    return '<div class="' . $classes . '" style="background-color:'. $color .';padding:'.$padding.';margin:'.$margin.';height:'.$size.';"></div>';
 }
 
 //////////////////////////////////////////////////////// TT Post Feed

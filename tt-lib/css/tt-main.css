@@ -886,11 +886,15 @@ ul.product-categories > li.cat-item:hover{
     width:100%;
 }
 .tt-post-loop {
-    margin:1.0em 0;
-    border-bottom:4px solid #ccc;
+    
 }
-
-
+.tt-post-content {
+    margin:1.0em;
+    padding:1.0em;
+}
+.rule {
+    
+}
 
 /* mobile ------------------------START------------------- */
 
