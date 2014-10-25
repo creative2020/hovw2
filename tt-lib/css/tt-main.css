@@ -526,7 +526,7 @@ h2.widgettitle {
     margin-bottom:-999px;
     padding-bottom:999px;
     overflow:hidden;
-    border-bottom-right-radius:100px;
+    border-bottom-left-radius:2.0em;
 }
 a.side-icon {
     text-align:center;
@@ -625,7 +625,7 @@ ul#menu-performance li a{
 .-wrap:hover{
     background-color:#ccc;
 }
-.home-wrap:hover .home-img img,
+.home-wrap:hover .home-img,
 .performance-wrap:hover .home-img img,
 .-wrap:hover .-img img{
     opacity:0.5;
@@ -722,6 +722,11 @@ ul.products li img{
 }
 ul.products li a h3{
     min-height:80px;
+}
+.available-on-backorder {
+    color:#3b3b3c;
+    float:right;
+    padding-right:3.0em;
 }
 ul.products li span.price{
     
@@ -884,13 +889,18 @@ ul.product-categories > li.cat-item:hover{
 }
 .tt-post-img-wrap img{
     width:100%;
+    height:auto;
 }
 .tt-post-loop {
     
 }
 .tt-post-content {
-    margin:1.0em;
     padding:1.0em;
+}
+.tt-post-content img {
+    max-width:100%;
+    padding-right:15px;
+    height:auto;
 }
 .rule {
     
