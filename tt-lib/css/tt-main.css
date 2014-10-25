@@ -879,6 +879,17 @@ ul.product-categories > li.cat-item:hover{
 }
 */
 /*Blog*/
+.tt-post-img-wrap {
+    background-color:#ccc;
+}
+.tt-post-img-wrap img{
+    width:100%;
+}
+.tt-post-loop {
+    margin:1.0em 0;
+    border-bottom:4px solid #ccc;
+}
+
 
 
 /* mobile ------------------------START------------------- */
