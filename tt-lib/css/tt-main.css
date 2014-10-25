@@ -87,10 +87,11 @@ a:hover {
     border-top-left-radius:1.0em;
     border-top-right-radius:1.0em;
     border-bottom:4px solid #e11b22;
+    max-height:122px;
 }
 #top .phone {
     color:white;
-    margin:63px 0 0 0;
+    margin:54px 0 0 0;
 	font-size: 1.5em;
 	font-weight: 400;
     text-align: right;
@@ -193,6 +194,126 @@ a:hover {
     color:white;
     background-color:#e11b22;
 }
+/*Product single*/
+.product_title {
+    max-width:90%;
+}
+.attachment-shop_thumbnail {
+    border:4px solid #ccc;
+    margin-right:5px;
+}
+.attachment-shop_thumbnail:hover {
+    border:4px solid #e11b22;
+}
+p.price{
+    font-size:1.5em;
+    color:#767676;
+}
+li.product h3 {
+    font-size:1.2em;
+}
+.product span.onsale {
+    padding:1.0em 2.0em;
+    background-color:green;
+    color:white;
+    Float:right;
+}
+li.sale span.onsale {
+    width:100%;
+    padding:0.2em 1.0em;
+    background-color:green;
+    float:right;
+}
+li.sale img {
+    margin:-1.0em 0 0 0;
+    float:left;
+}
+del span.amount {
+    color:#ccc;
+}
+ins span.amount {
+    color:green;
+    text-decoration:none;
+    font-style:italic;
+}
+ins {
+    text-decoration:none;
+    margin:0 0 0 15px;
+}
+.quantity {
+    padding:0.0em 1.0em 1.0em 0;
+    margin:0.2em 0.2em 0.2em 0;
+    float:left;
+}
+.product_meta {
+    padding:1.0em;
+    margin:1.0em 0 0 0;
+    background-color:#ccc;
+}
+input.qty {
+    color:green;
+    width:5.0em;
+    height:3.5em;
+    padding:0.2em;
+}
+.single_add_to_cart_button {
+    background-color:#e11b22;
+    color:white;
+    border:0px;
+    padding:1.0em;
+    margin:0.2em;
+    float:none;
+}
+.single_add_to_cart_button:hover {
+    background-color:#3b3b3c;
+    color:white;
+}
+ul.tabs {
+    width:100%;
+    height:27px;
+    list-style-type:none;
+    font-size:1.1em;
+    color:#3b3b3c;
+    margin:1.0em 0 0 0;
+    border-bottom:4px solid #ccc;
+}
+ul.tabs li{
+    color:#3b3b3c;
+    float:left;
+    margin:0 1px 0 0;
+}
+ul.tabs li a{
+    color:#3b3b3c;
+    padding:0.5em 1.0em;
+    background-color:#ccc;
+}
+ul.tabs li a:hover{
+    color:white;
+    padding:0.5em 1.0em;
+    background-color:#e11b22;
+}
+ul.tabs .active a{
+    color:white;
+    background-color:red;
+}
+
+/*<div class="woocommerce-tabs">
+		<ul class="tabs">
+			
+				<li class="description_tab active">
+					<a href="#tab-description">Description</a>
+				</li>
+
+			
+				<li class="reviews_tab">
+					<a href="#tab-reviews">Reviews (0)</a>
+				</li>
+
+					</ul>
+		
+			<div class="panel entry-content" id="tab-description" style="display: block;">*/
+
+
 /*Shop Menu*/
 .shop {
     border-right:0px;
@@ -600,7 +721,7 @@ ul.products li img{
     min-height:150px;
 }
 ul.products li a h3{
-    min-height:100px;
+    min-height:80px;
 }
 ul.products li span.price{
     
@@ -752,9 +873,12 @@ ul.product-categories > li.cat-item:hover{
     color:#9fcf67;
 }
 
+/*
 #wpadminbar {
     display:none;
 }
+*/
+/*Blog*/
 
 
 /* mobile ------------------------START------------------- */

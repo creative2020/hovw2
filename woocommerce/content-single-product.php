@@ -25,9 +25,9 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 	 	return;
 	 }
 ?>
-
 <div itemscope itemtype="<?php echo woocommerce_get_product_schema(); ?>" id="product-<?php the_ID(); ?>" <?php post_class(); ?>>
-
+    
+<!--Product images start-->
 	<?php
 		/**
 		 * woocommerce_before_single_product_summary hook
@@ -37,7 +37,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		 */
 		do_action( 'woocommerce_before_single_product_summary' );
 	?>
-
+<!--Product images end-->
+  
 	<div class="summary entry-summary">
 
 		<?php
@@ -56,7 +57,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 		?>
 
 	</div><!-- .summary -->
-
+ 
 	<?php
 		/**
 		 * woocommerce_after_single_product_summary hook

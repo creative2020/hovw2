@@ -27,12 +27,12 @@ get_header( 'shop' ); ?>
     ?>
       <div class="page-inside col-sm-12 flush">
 
-	
-    
       
 <div id="page" class="row">
     
 <div id="page-content" class="col-sm-8">
+    
+    <h1 itemprop="name" class="product_title entry-title"><?php the_title(); ?></h1>
 	
 
 		<?php while ( have_posts() ) : the_post(); ?>

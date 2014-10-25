@@ -1,18 +1,6 @@
-<?php
-/*
-Template Name: Home
-*/
-?>
 <?php get_header(); ?>
 
-<div class="row">
-    <div id="callout" class="col-sm-10 col-sm-offset-1">
-        <h3 class="callout-message">Callout home page message goes here.</h3>
-    </div>
-</div> <!--row-->
 
-
-    
     <div id="page-main" class="row">
       <div class="page-inside col-sm-10 col-sm-offset-1">
     <?php $src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), '611,90' ); ?>
@@ -22,10 +10,33 @@ Template Name: Home
     
 <div id="page-content" class="col-sm-8">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
-      <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
+    
+    
+    
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="col-sm-4 flush">
+                    <?php echo get_the_post_thumbnail( $post_id, 'thumbnail', $attr ); ?>
+                </div>
+                <div class="col-sm-8">
+                    <h1><?php the_title(); ?></h1>
+                    <span class="date"><?php the_date(); ?></span>
+                    <span class="author">by: <?php the_author(); ?></span>
+                    <span class="cat-links"><?php echo get_the_category_list( _x( ', ', 'Used between list items, there is a space after the comma.', '' ) ); ?></span>
+                    
+                </div>
+            </div>
+            
+            <div class="col-sm-12">
+                    <?php the_content('<p class="serif">Read the rest of this article &raquo;</p>'); ?>
+            </div>
+            
+            <div class="col-sm-12">
+                    <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
     <?php endwhile; endif; ?>
-  </div>
+            </div>
+            
+        </div>
       
   <div id="sidebar" class="col-sm-4 flush">
         <div id="social-media-icons">
@@ -37,41 +48,5 @@ Template Name: Home
   </div>
   </div>
   
-        
-    <div id="quicklink-wrap" class="row">
-        <div id="" class="col-sm-12 flush">
-            
-            <a href="#">
-                
-                <div class="quicklink col-sm-4">
-                    
-                    <i class="now fa fa-bullhorn"></i><i class="go fa fa-external-link"></i>
-                    <h2>Recent News</h2>
-                    <?php echo do_shortcode('[tt_posts limit="2" cat_name="home"]'); ?>
-                </div>
-            </a>
-            <a href="#">
-                <div class="quicklink col-sm-4">
-                    <i class="now fa fa-shopping-cart"></i><i class="go fa fa-external-link"></i>
-                    <h2>For Sale</h2>
-                    <?php echo do_shortcode('[tt_posts type="product" limit="2"]'); ?>
-                
-                </div>
-            </a>
-            <a href="#">
-                <div class="quicklink col-sm-4">
-                    <i class="now fa fa-rocket "></i><i class="go fa fa-external-link"></i>
-                    <h2>Performance</h2>
-                    <?php echo do_shortcode('[tt_posts limit="2" cat_name="performance"]'); ?>
-                
-                </div>
-            </a>
-    
-    </div>
-
-
-
-</div>
-
 
   <?php get_footer() ?>
