@@ -323,22 +323,33 @@ ul.tabs .active a{
     color:white;
     background-color:red;
 }
+.woocommerce-pagination {
+    color:green;
+    float:left;
+}
+.woocommerce-pagination ul.page-numbers {
+    list-style-type:none;
+}
+.woocommerce-pagination ul.page-numbers li{
+    float:left;
+    margin: 0 5px 0 0;
+}
+.page-numbers .current {
+    background-color:#e11b22;
+    color:white;
+    padding:0.5em 1.0em;
+}
 
-/*<div class="woocommerce-tabs">
-		<ul class="tabs">
-			
-				<li class="description_tab active">
-					<a href="#tab-description">Description</a>
-				</li>
 
-			
-				<li class="reviews_tab">
-					<a href="#tab-reviews">Reviews (0)</a>
-				</li>
 
-					</ul>
-		
-			<div class="panel entry-content" id="tab-description" style="display: block;">*/
+.woocommerce-pagination ul.page-numbers li a{
+    background-color:#ccc;
+    padding:0.5em 1.0em;
+}
+.woocommerce-pagination ul.page-numbers li a:hover {
+    background-color:#e11b22;
+    color:white;
+}
 
 
 /*Shop Menu*/

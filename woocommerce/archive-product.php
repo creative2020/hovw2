@@ -67,7 +67,7 @@ get_header( 'shop' ); ?>
 
 			<?php woocommerce_product_loop_end(); ?>
     
-    </div>
+    
 
 			<?php
 				/**
@@ -77,7 +77,7 @@ get_header( 'shop' ); ?>
 				 */
 				do_action( 'woocommerce_after_shop_loop' );
 			?>
-    
+    </div>
     <div id="sidebar" class="col-xs-12 col-sm-12 col-md-4 flush">
         <div id="social-media-icons">
             <a href="#"><i class="fa fa-facebook-square"></i></a>
