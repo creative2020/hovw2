@@ -453,6 +453,21 @@ h3.callout-message {
     padding:0.5em 0 0.7em 0;
     margin:0;
 }
+h3.callout-message a{
+    color:white;
+    text-decoration:underline;
+    margin:0;
+}
+h3.callout-message a:hover{
+    color:#ccc;
+    text-decoration:underline;
+    margin:0;
+}
+h3.callout-message p{
+    color:white;
+    margin:0;
+    padding:0;
+}
 /*Page Header*/
 #page-header {
     background-color:#b3b4b2;

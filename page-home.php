@@ -5,13 +5,19 @@ Template Name: Home
 ?>
 <?php get_header(); ?>
 
-<div class="row">
+
+<?php
+$message_display = get_field('message_display', 'options');
+$message = get_field('message', 'options');
+
+if ($message_display = 'Yes') {
+echo '<div class="row">
     <div id="callout" class="col-sm-10 col-sm-offset-1">
-        <h3 class="callout-message">Callout home page message goes here.</h3>
+        <h3 class="callout-message">'.$message.'</h3>
     </div>
-</div> <!--row-->
-
-
+</div> <!--row-->';
+}
+?>
     
     <div id="page-main" class="row">
       <div class="page-inside col-sm-10 col-sm-offset-1">
