@@ -250,6 +250,33 @@ ins {
     margin:1.0em 0 0 0;
     background-color:#ccc;
 }
+table.variations tr{
+    background-color:#ccc;
+    margin:1.0em 0;
+    
+}
+table.variations .label {
+    color:#3b3b3c;
+}
+label.variation-label {
+    font-size:1.2em;
+    padding:11px;
+    margin-top:5px;
+}
+table.variations tr a {
+    font-size:1.2em;
+    padding:11px;
+}
+.single_variation {
+    margin:1.0em 0;
+}
+.single_variation span.price {
+    font-size:2.0em;
+    color:#e11b22;
+}
+.single_variation span.amount{
+    
+}
 input.qty {
     color:green;
     width:5.0em;
@@ -726,11 +753,21 @@ ul.products li a h3{
 .available-on-backorder {
     color:#3b3b3c;
     float:right;
+}
+p.stock {
+    color:#3b3b3c;
+    float:right;
     padding-right:3.0em;
 }
 ul.products li span.price{
     
 }
+.woocommerce-tabs .panel {
+    background-color:transparent;
+    min-height:400px;
+}
+
+
 ul.products li span.amount{
     font-size:1.2em;
     margin:1.5em 0 0 0;
