@@ -9,6 +9,8 @@
 <div id="page" class="row">
     
 <div id="page-content" class="col-sm-8">
+
+<?php echo do_shortcode('[pb_slideshow group="0"]'); ?>                
     
 <div class="row">
 <div class="col-sm-12 flush">
@@ -80,6 +82,36 @@ $post_thumbnail = '<img src="'.$images_url.'quicklink-fpo.png">';
     
 
 </div><!--Page end-->
-<?php get_footer() ?>
 
-</div>
+    <div id="quicklink-wrap" class="row">
+        <div id="" class="col-sm-12 flush">
+            
+            <a href="#">
+                
+                <div class="quicklink col-sm-4">
+                    
+                    <i class="now fa fa-bullhorn"></i><i class="go fa fa-external-link"></i>
+                    <h2>Recent News</h2>
+                    <?php echo do_shortcode('[tt_posts limit="2" cat_name="home"]'); ?>
+                </div>
+            </a>
+            <a href="#">
+                <div class="quicklink col-sm-4">
+                    <i class="now fa fa-shopping-cart"></i><i class="go fa fa-external-link"></i>
+                    <h2>For Sale</h2>
+                    <?php echo do_shortcode('[tt_posts type="product" limit="2"]'); ?>
+                
+                </div>
+            </a>
+            <a href="#">
+                <div class="quicklink col-sm-4">
+                    <i class="now fa fa-rocket "></i><i class="go fa fa-external-link"></i>
+                    <h2>Performance</h2>
+                    <?php echo do_shortcode('[tt_posts limit="2" cat_name="performance"]'); ?>
+                
+                </div>
+            </a>
+        </div>
+    </div><!-- quicklink-wrap -->
+
+<?php get_footer() ?>
