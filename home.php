@@ -60,7 +60,7 @@ $post_thumbnail = '<img src="'.$images_url.'quicklink-fpo.png">';
 
 <!--Pagination-->
 <div class="col-sm-12 link-pages">
-    <?php the_posts_pagination(); ?>
+    <?php the_posts_pagination(array('screen_reader_text' => 'Page')); ?>
 </div>
 <!--Pagination end-->       
 
