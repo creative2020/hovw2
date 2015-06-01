@@ -25,7 +25,7 @@
             <i class="fa fa-phone"></i> 417-501-6989</div>
         </div>
         <div class="visible-xs col-xs-12 flush">
-                <a href="tel:123-456-7890"><h2 class="phone-m col-xs-12 text-center"><i class="fa fa-phone"></i> 417-501-6989</h2></a>
+                <a href="tel:417-501-6989"><h2 class="phone-m col-xs-12 text-center"><i class="fa fa-phone"></i> 417-501-6989</h2></a>
             </div>
     
 </div> 
