@@ -60,10 +60,10 @@ $post_thumbnail = '<img src="'.$images_url.'quicklink-fpo.png">';
 
 <!--Pagination-->
 <div class="col-sm-12 link-pages">
-    <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-
+    <?php the_posts_pagination(); ?>
 </div>
 <!--Pagination end-->       
+
 </div><!--Post loop row-->
     
 </div><!--Page content row-->    
